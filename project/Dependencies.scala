@@ -4,6 +4,14 @@ import sbt._
 /** Build dependency and repository definitions. */
 object Dependencies {
 
+  val scalaParserCombinators = Def.setting(
+    "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
+  )
+
+  val scalaXml = Def.setting(
+    "org.scala-lang.modules" %% "scala-xml" % "1.3.0"
+  )
+
   val atmosphereJersey = "org.atmosphere" % "atmosphere-jersey" % "0.8.7"
   val javaxServlet = "javax.servlet" % "servlet-api" % "2.5"
   val jaxbApi = "javax.xml.bind" % "jaxb-api" % "2.3.1"
